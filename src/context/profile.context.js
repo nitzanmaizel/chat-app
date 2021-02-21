@@ -1,9 +1,10 @@
-import React,{ createContext } from "react";
+import React,{ createContext, useState } from "react";
 
 const ProfileContext = createContext()
 
 export const ProfileProvider = ({children})=>{
-  return <ProfileContext.Provider>
+  const [profile]=useState(false)
+  return <ProfileContext.Provider value={profile}>
     {children}
   </ProfileContext.Provider>
 }
