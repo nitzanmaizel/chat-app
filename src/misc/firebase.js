@@ -1,4 +1,5 @@
 import firebase from "firebase/app"
+import 'firebase/auth'
 const config = {
   apiKey: "AIzaSyCVBdZlqrZSTI870rX_lJIWrxMoprnre0k",
   authDomain: "chat-web-app-61253.firebaseapp.com",
@@ -8,4 +9,5 @@ const config = {
   appId: "1:1042001453648:web:28eb0ad1e57fd246efe755"
 };
 
-const app = firebase.initializeApp(config)
+const app = firebase.initializeApp(config);
+export const auth = app.auth();
