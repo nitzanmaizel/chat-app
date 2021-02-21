@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Grid, Panel, Row } from 'rsuite';
+import { Button, Col, Container, Grid, Icon, Panel, Row } from 'rsuite';
 
 const SignIn = () => {
   return (
@@ -11,6 +11,14 @@ const SignIn = () => {
               <div className="text-center">
                 <h2>Welcome to Chat</h2>
                 <p>Progressive chat platform for everyone</p>
+              </div>
+              <div className="mt-3">
+                <Button block color="blue">
+                  <Icon icon="facebook"/> Continue with Facebook
+                </Button>
+                <Button block color="green">
+                  <Icon icon="google"/> Continue with Google
+                </Button>
               </div>
             </Panel>
           </Col>
