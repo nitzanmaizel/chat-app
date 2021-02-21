@@ -2,8 +2,11 @@
 
 # dependencies
 /node_modules
+/Assets
 /.pnp
 .pnp.js
+.eslintrc
+.prettierrc
 
 # testing
 /coverage
