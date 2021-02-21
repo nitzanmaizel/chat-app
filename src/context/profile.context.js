@@ -1,4 +1,4 @@
-import React,{ createContext, useState } from "react";
+import React,{ createContext, useState,useContext } from "react";
 
 const ProfileContext = createContext()
 
@@ -8,3 +8,5 @@ export const ProfileProvider = ({children})=>{
     {children}
   </ProfileContext.Provider>
 }
+
+export const UseProfile = () => useContext(ProfileContext)
